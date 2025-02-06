@@ -1,5 +1,5 @@
 common:
-  img_topic: "/left_camera/image"
+  img_topic: "/pylon_camera_node/image_raw"
   lid_topic: "/livox/lidar"
   imu_topic: "/livox/imu"
   img_en: 1
@@ -7,12 +7,16 @@ common:
   ros_driver_bug_fix: false
 
 extrin_calib:
-  extrinsic_T: [0.04165, 0.02326, -0.0284]
-  extrinsic_R: [1, 0, 0, 0, 1, 0, 0, 0, 1]
-  Rcl: [0.00610193,-0.999863,-0.0154172,
-        -0.00615449,0.0153796,-0.999863,
-        0.999962,0.00619598,-0.0060598] 
-  Pcl: [0.0194384, 0.104689,-0.0251952]
+  extrinsic_T: [0.04165, 
+                0.02326, 
+                -0.0284]
+  extrinsic_R: [1, 0, 0, 
+                0, 1, 0, 
+                0, 0, 1]
+  Rcl: [0.00326156,-0.999879,-0.0152125,
+        -0.00879491,0.0151833,-0.999846,
+        0.999956,0.00339485,-0.00874432] 
+  Pcl: [-0.000952089,-0.0204623,-0.0197042]
 
 time_offset: 
   imu_time_offset: 0.0
