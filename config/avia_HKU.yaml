@@ -1,5 +1,5 @@
 common:
-  img_topic: "/pylon_camera_node/image_raw"
+  img_topic: "/left_camera/image"
   lid_topic: "/livox/lidar"
   imu_topic: "/livox/imu"
   img_en: 1
@@ -13,11 +13,11 @@ extrin_calib:
   extrinsic_R: [1, 0, 0, 
                 0, 1, 0, 
                 0, 0, 1]
-  Rcl: [0.002094, -0.999923, -0.012217,
-        0.009225,  0.012236, -0.999883,
-        0.999955,  0.001981,  0.009249]
+  Rcl: [-0.00200, -0.99975, -0.02211,
+      -0.00366, 0.02212, -0.99975,
+       0.99999, -0.00192, -0.00371]
          
-  Pcl: [ 0.01024, 0.029321, -0.060295]
+  Pcl: [0.00260, 0.05057, -0.00587]
 
 time_offset: 
   imu_time_offset: 0.0
